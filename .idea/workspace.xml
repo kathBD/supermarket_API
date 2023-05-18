@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dfb7498-59b3-441d-9291-ba3e81aef12a" name="Changes" comment="se estructura el proyecto">
-      <change afterPath="$PROJECT_DIR$/market-api/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/market-api/src/main/resources/application-pdn.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market-api/src/main/java/com/marketapi/HolaMUndoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/market-api/src/main/java/com/marketapi/web/controller/HolaMUndoController.java" afterDir="false" />
+    <list default="true" id="3dfb7498-59b3-441d-9291-ba3e81aef12a" name="Changes" comment="Arquitectura de capas DDD">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/market-api/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +50,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -65,16 +63,31 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;b759ac0e91e94870ae32f688d031697a&quot;
   }
 }</component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration name="MarketApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="MarketApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <module name="market-api.market-api.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.marketapi.MarketApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="market-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,7 +103,9 @@
       <updated>1683926970345</updated>
       <workItem from="1683926971977" duration="2472000" />
       <workItem from="1684189878092" duration="1480000" />
-      <workItem from="1684254108218" duration="4497000" />
+      <workItem from="1684254108218" duration="6803000" />
+      <workItem from="1684279901803" duration="706000" />
+      <workItem from="1684280715965" duration="151000" />
     </task>
     <task id="LOCAL-00001" summary="se estructura el proyecto">
       <created>1683929052088</created>
@@ -99,7 +114,35 @@
       <option name="project" value="LOCAL" />
       <updated>1683929052088</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Arquitectura de capas DDD">
+      <created>1684269811771</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684269811771</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Arquitectura de capas DDD">
+      <created>1684269854948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684269854948</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Arquitectura de capas DDD">
+      <created>1684269904831</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684269904831</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Arquitectura de capas DDD">
+      <created>1684269988006</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684269988006</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +161,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="se estructura el proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="se estructura el proyecto" />
+    <MESSAGE value="Arquitectura de capas DDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arquitectura de capas DDD" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/market_api$MarketApiApplication.ic" NAME="MarketApiApplication Coverage Results" MODIFIED="1684280603545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
